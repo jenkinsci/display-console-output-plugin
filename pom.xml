@@ -6,10 +6,9 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>2.11</version>
+    <version>1.575</version>
     <relativePath/>
   </parent>
-  <groupId>com.lyenliang</groupId>
   <artifactId>display-console-output</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
@@ -28,9 +27,8 @@
     -->
   </properties>
 
-  <name>TODO Plugin</name>
-  <description>TODO</description>
-  <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
+  <name>Display Output Plugin</name>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Display+Output+Plugin</url>
 
   <!-- The default licence for Jenkins OSS Plugins is MIT. Substitute for the applicable one if needed. -->
 
@@ -41,15 +39,14 @@
     </license>
   </licenses>
 
-  <!-- If you want this to appear on the wiki page:
   <developers>
     <developer>
-      <id>bhacker</id>
-      <name>Bob Q. Hacker</name>
-      <email>bhacker@nowhere.net</email>
+      <id>lyenliang</id>
+      <name>Yen-Liang Lee</name>
+      <email>lyenliang@gmail.com</email>
     </developer>
   </developers>
-  -->
+  
   <!-- Assuming you want to host on @jenkinsci:
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
@@ -79,4 +76,6 @@
   </dependencies>
   -->
 
+  <groupId>com.lyenliang</groupId>
+  <description>This plugin adds console output of last build to the project's page.</description>
 </project>
