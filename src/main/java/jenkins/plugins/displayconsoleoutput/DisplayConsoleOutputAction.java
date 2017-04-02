@@ -1,9 +1,10 @@
-package com.lyenliang.displayconsoleoutput;
+package jenkins.plugins.displayconsoleoutput;
 
 import java.io.IOException;
 
 import org.apache.commons.jelly.XMLOutput;
 
+import edu.umd.cs.findbugs.annotations.CheckForNull;
 import hudson.model.AbstractBuild;
 import hudson.model.AbstractProject;
 import hudson.model.Action;
@@ -19,19 +20,16 @@ public class DisplayConsoleOutputAction<P extends AbstractProject<P, R>, R exten
 	
 	@Override
 	public String getIconFileName() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public String getDisplayName() {
-		// TODO Auto-generated method stub
-		return null;
+		return "Display Console Output Plugin";
 	}
 
 	@Override
 	public String getUrlName() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 	
@@ -41,7 +39,8 @@ public class DisplayConsoleOutputAction<P extends AbstractProject<P, R>, R exten
         }
     	return project.getLastBuild().getNumber();
     }
-    
+	
+	@CheckForNull
     public R getBuild() {
         if (project == null) {
             return null;

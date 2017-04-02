@@ -1,4 +1,4 @@
-package com.lyenliang.displayconsoleoutput;
+package jenkins.plugins.displayconsoleoutput;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -10,10 +10,8 @@ import hudson.model.TransientProjectActionFactory;
 
 @Extension
 public class DisplayConsoleOutputActionFactory extends TransientProjectActionFactory{
-
 	 @Override
-	    public Collection<? extends Action> createFor(AbstractProject target) {
-	        return Collections.singletonList(new DisplayConsoleOutputAction(target));
-	    }
-
+	 public Collection<? extends Action> createFor(AbstractProject target) {
+		 return Collections.singletonList(new DisplayConsoleOutputAction(target));
+	 }
 }
