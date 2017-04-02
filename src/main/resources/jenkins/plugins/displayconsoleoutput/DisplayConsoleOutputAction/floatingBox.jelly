@@ -18,7 +18,7 @@
                             <img src="${imagesURL}/24x24/terminal.png" width="24" height="24" />
                         </a>
                         <st:nbsp />
-                        <a href="lastBuild/console">${%Console output} ${action.lastBuildNumber}</a>
+                        <a href="lastBuild/console">${%Console output} #${action.lastBuildNumber}</a>
                     </b>
                     <j:if test="${!action.complete}">
                         <br />
