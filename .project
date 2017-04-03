@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
   <name>display-console-output</name>
-  <comment>TODO. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
+  <comment>This plugin adds console output of last build to the project&apos;s page. NO_M2ECLIPSE_SUPPORT: Project files created with the maven-eclipse-plugin are not supported in M2Eclipse.</comment>
   <projects/>
   <buildSpec>
     <buildCommand>
