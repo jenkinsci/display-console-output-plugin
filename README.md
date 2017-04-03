@@ -1,4 +1,4 @@
-Display Console Output Plugin
+# Display Console Output Plugin
 
 This plugin adds console output of last build to the project page. 
 
