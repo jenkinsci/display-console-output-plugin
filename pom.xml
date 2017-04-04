@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.575</version>
+    <version>2.11</version>
     <relativePath/>
   </parent>
   
@@ -34,7 +34,7 @@
 
   <name>Display Console Output Plugin</name>
   <description>This plugin adds console output of last build to the project's page.</description>
-  <url>https://wiki.jenkins-ci.org/display/JENKINS/Display+Output+Plugin</url>
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Display+Console+Output+Plugin</url>
 
   <!-- The default licence for Jenkins OSS Plugins is MIT. Substitute for the applicable one if needed. -->
 
