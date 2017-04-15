@@ -2,9 +2,13 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt" xmlns:local="local">
     <l:main-panel>
         <div style="background-color: #eee; overflow-x: auto; padding:10px; margin: 2px; border: 1px solid #777;">
+            <b><a href="lastBuild/console"><img src="${imagesURL}/24x24/terminal.png" width="24" height="24" /></a>
+              <st:nbsp />
+              <a href="lastBuild/console">${%Console output} #${action.lastBuildNumber}</a>
+            </b>
             <j:choose>
                 <!-- Do progressive console output -->
-                <j:when test="${action.run.isLogUpdated()}">
+                <j:when test="${action.build.isLogUpdated()}">
                     <pre id="out" class="console-output" />
                     <div id="spinner">
                         <img src="${imagesURL}/spinner.gif" alt="spinner" />
@@ -13,14 +17,8 @@
                 </j:when>
                 <!-- output is completed now. -->
                 <j:otherwise>
-                    <b>
-                        <a href="lastBuild/console">
-                            <img src="${imagesURL}/24x24/terminal.png" width="24" height="24" />
-                        </a>
-                        <st:nbsp />
-                        <a href="lastBuild/console">${%Console output} #${action.lastBuildNumber}</a>
-                    </b>
-                    <j:if test="${!action.complete}">
+                    
+                    <j:if test="${action.tooLong}">
                         <br />
                         <i>${%Snip!} (<a href="lastBuild/consoleFull">${%Full log}</a>)</i>
                     </j:if>
