@@ -38,7 +38,7 @@ public class DisplayConsoleOutputAction<P extends AbstractProject<P, R>, R exten
 		if (project == null ) {
 			return 0;
 		}
-		if ( project != null && project.getLastBuild() == null ) {
+		if ( project.getLastBuild() == null ) {
 			return 0;
 		}
 		return project.getLastBuild().getNumber();
