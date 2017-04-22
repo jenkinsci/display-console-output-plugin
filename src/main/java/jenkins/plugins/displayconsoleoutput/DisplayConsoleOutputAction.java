@@ -35,15 +35,13 @@ public class DisplayConsoleOutputAction<P extends AbstractProject<P, R>, R exten
 	}
 
 	public int getLastBuildNumber() {
-		if (project == null ) {
-			return 0;
+		if (project != null && project.getLastBuild() != null ) {
+			return project.getLastBuild().getNumber();
 		}
-		if ( project.getLastBuild() == null ) {
-			return 0;
-		}
-		return project.getLastBuild().getNumber();
+		return 0;
 	}
 
+	
 	@CheckForNull
 	public R getBuild() {
 		if (project == null) {
