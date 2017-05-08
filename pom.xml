@@ -8,7 +8,15 @@
     <version>2.11</version>
     <relativePath />
   </parent>
-  
+
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <artifactId>display-console-output</artifactId>
   <version>1.0.6-SNAPSHOT</version>
   <packaging>hpi</packaging>
