@@ -1,7 +1,7 @@
 <?jelly escape-by-default='true'?>
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:i="jelly:fmt" xmlns:local="local">
     <l:main-panel>
-        <div style="background-color: #eee; overflow-x: auto; padding:10px; margin: 2px; border: 1px solid #777;">
+        <div style="background-color: #eee; overflow-x: auto; padding:10px; margin: 2px; border: 1px solid #777; max-width: 700px;">
             <b><a href="lastBuild/console"><img src="${imagesURL}/24x24/terminal.png" width="24" height="24" /></a>
               <st:nbsp />
               <a href="lastBuild/console">${%Console output} #${action.lastBuildNumber}</a>
